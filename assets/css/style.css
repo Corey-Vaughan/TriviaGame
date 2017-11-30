@@ -1,0 +1,77 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-image: url("../images/gamebg.png");
+    background-size: 100%;
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+}
+
+button {
+    display: block;
+    width: 50%;
+    height: 20%;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    font-size: 42px;
+    ;
+}
+
+img {
+    height: 200px;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    ;
+    font-size: 100px;
+    color: blue;
+    padding-top: 2.5%;
+}
+
+h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+h3 {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#startGame {
+    margin-top: 30px;
+    color: white;
+    background: blue;
+}
+
+#startGame:hover {
+    background: green;
+}
+
+.answerButton {
+    font-family: 'Righteous', cursive;
+    color: white;
+}
+
+button:hover {
+    border: 2px solid black;
+    background: green;
+    color: black;
+}
