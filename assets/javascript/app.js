@@ -1,5 +1,5 @@
 var playArea = $("#gameArea");
-var countStartNumber = 30;
+var countStartNumber = 15;
 
 //CLICK EVENTS
 
@@ -16,7 +16,7 @@ $(document).on("click", ".answerButton", function(e) {
 //When start button is clicked display question and timer
 $(document).on("click", "#startGame", function(e) {
     $("#tagLine").hide();
-    $("#innerContainer").prepend("<h2>Time Remaining: <span id='counterNumber'>30</span> Seconds</h2>");
+    $("#innerContainer").prepend("<h2>Time Remaining: <span id='counterNumber'>15</span> Seconds</h2>");
     game.loadQuestion();
 });
 
