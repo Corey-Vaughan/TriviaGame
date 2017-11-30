@@ -8,12 +8,12 @@ $(document).on("click", "#startOver", function(e) {
     game.reset();
 });
 
-//When answer is clicked..
+//When answer is clicked display either correct or incorrect plus answer
 $(document).on("click", ".answerButton", function(e) {
     game.clicked(e);
 });
 
-//When start button is clicked display question and timer
+//When start button is clicked display question and timer while hiding text from start page
 $(document).on("click", "#startGame", function(e) {
     $("#tagLine").hide();
     $("#innerContainer").prepend("<h2>Time Remaining: <span id='counterNumber'>15</span> Seconds</h2>");
@@ -141,7 +141,7 @@ var game = {
         playArea.append("<h3>Unanswered: " + (questions.length - (game.incorrect + game.correct)) + "</h3>");
         playArea.append('<br><button id="start-over">Start Over?</button>');
     },
-    //Stop timer when showing results
+    //Stop timer when showing results and show answer
     clicked: function(e) {
         clearInterval(timer);
 
